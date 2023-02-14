@@ -4,17 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <nav class="flex flex-row justify-between">
-        <div class="logo"> <img src="logo-2.png" alt=""></div>
-        <div class="hamburger">
-            <div class="w-0.6 bg-black h-1"></div>
-            <div class="w-0.6 bg-black h-1"></div>
-            <div class="w-0.6 bg-black h-1"></div>
+    <nav class="flex flex-row justify-between items-center px-8 py-3 bg-black sticky top-0">
+        <div class="logo"> <img class="w-28" src="logo-2.png" alt=""></div>
+        <div class="hamburger lg:hidden">
+            <div class="line h-0.5  w-6 bg-white my-1"></div>
+            <div class="line h-0.5 w-6 bg-white my-1"></div>
+            <div class="line h-0.5 w-6 bg-white my-1"></div>
+        </div>
+        <div class="right-item hidden lg:block text-white ">
+            <ul class="flex flex-row space-x-5 font-mono text-lg">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Course</a></li>
+                <li><a href="">Campus</a></li>
+                <li><a href="">Facilities</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
         </div>
     </nav>
+    <div class="homePage"><img src="slider1.jpg" alt=""></div>
+    <div class="about space-y-7 text-center mt-7 w-4/5 mx-auto md:w-4/6 text-lg text-[#45000b]">
+        <h2 class="text-3xl">ABOUT US</h2>
+        <p>GL Bajaj Institute of Technology & Management is the 6th Institute established under the prestigious banner of Rajeev Memorial Academic Welfare Society (Registered Under Societies Registration Act 1860). The institute is approved by All India Council for Technical Education (AICTE), Ministry of HRD, Govt. of India and Affiliated to Dr. A.P.J. Abdul Kalam Technical University (Formerly UPTU Lucknow).</p>
+        <p>GL Bajaj Institute of Technology and Management is one of the quality driven Educational Institute in the Greater Noida/Delhi-NCR Region. GL Bajaj stands out in its approach to assist and equip the students for their overall development, giving them a strong foundation for a successful future. The institute offers B.Tech, M.Tech, MBA, MCA.</p>
+        <p>This self financed institute is governed by Rajeev Memorial Academic Welfare Society (Registered Under Societies Registration Act 1860). It is approved by All India Council for Technical Education (AICTE), Ministry of Human Resource Development, Government of India and affiliated to Dr. A.P.J. Abdul Kalam Technical University, Lucknow.</p>
+    </div>
+    <div class="achievment">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </body>
 </html>
