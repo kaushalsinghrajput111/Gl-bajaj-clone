@@ -11,12 +11,18 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="flex flex-row justify-between items-center px-8 py-3 bg-black sticky top-0">
+    <nav class="flex flex-row justify-between items-center px-8 py-3 bg-black sticky top-0 z-10">
         <div class="logo"> <img class="w-28" src="logo-2.png" alt=""></div>
         <div class="hamburger lg:hidden">
             <div class="line h-0.5  w-6 bg-white my-1"></div>
             <div class="line h-0.5 w-6 bg-white my-1"></div>
             <div class="line h-0.5 w-6 bg-white my-1"></div>
+        </div>
+        <div class="crossbtn w-0 hidden pr-5">
+            <div class="line h-0.5  w-0 bg-white rotate-180 transition-all duration-1000 relative
+            top-[5px] my-1"></div>
+            <div class="line h-0.5 w-0 bg-white -rotate-180 my-1 transition-all duration-1000 "></div>
+        
         </div>
         <div class="right-item hidden lg:block text-white ">
             <ul class="flex flex-row space-x-5 font-mono text-lg">
@@ -28,7 +34,18 @@
                 <li><a href="">Contact</a></li>
             </ul>
         </div>
+        <div class="slider fixed h-[100vh] w-0 top-[62px] -left-72 text-white bg-slate-500 transition-all duration-[0.5s]">
+            <ul class="flex flex-col transition font-mono text-lg leading-8 px-6 mt-3">
+                <li><a href="" class="hover:text-orange-300 hover:pl-5 transition-all duration-500 ">Home</a></li>
+                <li><a href="" class="hover:text-orange-300 hover:pl-5 transition-all duration-500 ">About</a></li>
+                <li><a href="" class="hover:text-orange-300 hover:pl-5 transition-all duration-500 ">Course</a></li>
+                <li><a href="" class="hover:text-orange-300 hover:pl-5 transition-all duration-500 ">Campus</a></li>
+                <li><a href="" class="hover:text-orange-300 hover:pl-5 transition-all duration-500 ">Facilities</a></li>
+                <li><a href="" class="hover:text-orange-300 hover:pl-5 transition-all duration-500 ">Contact</a></li>
+            </ul>
+        </div>
     </nav>
+
     <div class="homePage"><img src="slider1.jpg" alt=""></div>
     <div class="w-[90%] mx-auto md:w-[80%]  text-[#45000b] text-[16px]">
     <div class="about space-y-7 text-center mt-7">
@@ -61,6 +78,94 @@
         </div>
     </div>
 
+<div><h2 class="text-center text-3xl pt-5 pb-2 ">OUR FACILITIES</h2>
+<div class="facilities flex flex-col lg:flex-row lg:flex-wrap space-y-8   justify-center lg:justify-between">
+
+    <div class="facilities-item mt-8  bg-white rounded-lg text-left shadow-2xl  lg:w-[32%]">
+        <img class="w-full h-52 rounded-t-lg " src="hostal.jpg" alt="">
+        <h3 class="text-2xl px-4 my-3 text-[#3f000b]">HOSTEL FACILITIES</h3>
+        <p class="px-5 mb-9 text-[15px]">GL Bajaj provides hostel facility. However, students are also free to make their own arrangement, if they desire. The hostel at GL Bajaj provides comfortable environment to live in.</p>
+    </div>
+    <div class="facilities-item  bg-white rounded-lg text-left shadow-2xl  lg:w-[32%]">
+        <img class="w-full h-52 rounded-t-lg "  src="lab.jpg" alt="">
+        <h3  class="text-2xl px-4 my-3 text-[#3f000b]">LABS</h3>
+        <p class="px-5 mb-9 text-[15px]">Labs play a very critical role in technical education. Almost every topic taught during lecture has a corresponding experiment. GL Bajaj pays great attention to its labortries and the equipment in them.</p>
+    </div>
+    <div class="facilities-item  bg-white rounded-lg text-left shadow-2xl  lg:w-[32%]">
+        <img class="w-full h-52 rounded-t-lg " src="Library.jpg" alt="">
+        <h3  class="text-xl px-4 my-3 text-[#3f000b]">LIBRARY</h3>
+        <p class="px-5 mb-9 text-[15px]">Central Library provides fully air-conditioned & Wi-Fi enabled world-class learning environment. The Library has well-developed book stack, reference section and digital library which makes studying a unique and a lifetime experience.</p>
+    </div>
+    <div class="facilities-item   bg-white rounded-lg text-left shadow-2xl  lg:w-[32%]">
+        <img class="w-full h-52 rounded-t-lg " src="mess-cafeteria.jpg" alt="">
+        <h3  class="text-xl px-4 my-3 ">MESS & CAFETERIA</h3>
+        <p class="px-5 mb-9 text-[15px]">The institute has its own food courts, which have emerged as the students' favorite haunts. The food courts serve quick tangy bites to healthy and nutritious food.</p>
+    </div>
+    <div class="facilities-item  bg-white rounded-lg text-left shadow-2xl  lg:w-[32%]">
+        <img class="w-full h-52 rounded-t-lg " src="sports.jpg" alt="">
+        <h3  class="text-xl px-4 my-3 text-[#3f000b]">SPORTS FACILITIES</h3>
+        <p class="px-5 mb-9 text-[15px]">Spending quality time is never a problem in the Institute. Sports facilities are provided for Futsal, Table Tennis, Cricket, Football, Badminton, Basketball, and Volleyball. Evenings find students enjoying the excitement of these sports as players and audience.</p>
+    </div>
+    <div class="facilities-item  bg-white rounded-lg text-left shadow-2xl  lg:w-[32%]">
+        <img class="w-full h-52 rounded-t-lg " src="gym-and-sports.jpg" alt="">
+        <h3  class="text-xl px-4 my-3 text-[#3f000b]">AMATRA "THE GYM"</h3>
+        <p class="px-5 mb-9 text-[15px]">Amatra "the GYM" GL Bajaj understands the students need for fitness. We take great pride in providing healthy fitness solutions at our campus. Our intention is to help the students feel better, look better and enjoy the life to its fullest</p>
+    </div>
 </div>
+</div>
+<div class="courses flex flex-row flex-wrap justify-between text-justify my-8 space-y-10">
+    <div class="course-item w-[30%] shadow-xl rounded-md">
+         <div class="logo">
+
+         </div>
+         <div class="head text-center">
+            <h3>BCA</h3>
+         </div>
+         <div class="info">The course curriculum is followed AKTU and the college is also good in placing the student in good company and they also find a good package in a reputed company.</div>
+    </div>
+    <div class="course-item w-[30%]">
+        <div class="logo"></div>
+        <div class="head">
+            <h3>BBA</h3>
+        </div>
+        <div class="info">The Bachelors of Business Administration (BBA) is an internationally-recognized degree designed to develop the skills required for careers in business and management.</div>
+   </div>
+   <div class="course-item w-[30%] shadow-xl rounded-md">
+    <div class="logo"></div>
+    <div class="head"><h3>PGDM</h3></div>
+    <div class="info">Post Graduate Diploma In Management in India is post graduate degree that engineers can opt. The benefits of PGDM degree is that multiple jobs open for individual.</div>
+</div>
+<div class="course-item w-[30%] shadow-xl rounded-md">
+    <div class="logo"></div>
+    <div class="head">
+        <h3>B. TECH.</h3>
+    </div>
+    <div class="info">The course curriculum is followed AKTU and the college is also good in placing the student in good company and they also find a good package in a reputed company.</div>
+</div>
+<div class="course-item w-[30%] shadow-xl rounded-md">
+    <div class="logo"></div>
+    <div class="head">M.B.A.</div>
+    <div class="info">The Master of Business Administration (MBA) is an internationally-recognized degree designed to develop the skills required for careers in business and management.</div>
+</div>
+<div class="course-item w-[30%] shadow-xl rounded-md">
+    <div class="logo"></div>
+    <div class="head">M. TECH.</div>
+    <div class="info">Master of Technology (M.Tech)in India is post graduate degree that engineers can opt. The benefits of MTech degree is that multiple jobs open for individual.</div>
+    </div>
+    <div class="course-item w-[30%] shadow-xl rounded-md">
+        <div class="logo"></div>
+        <div class="head"><h3>M.C.A.</h3></div>
+        <div class="info">The MCA programme prepares the students to get into the IT industry - one of the most preferred industries today to take up positions like Systems Analysts.</div>
+    </div>
+
+<div class="course-item w-[30%] shadow-xl rounded-md">
+    <div class="logo"></div>
+    <div class="head"><h3>B.TECH.(LATERAL)</h3></div>
+    <div class="info">Get Lateral Entry Admission 2019 In B.Tech Computer Science Engineering From India's Top Ranked Colleges GL Bajaj Institute of technology & Management.</div>
+</div>
+
+</div>
+</div>
+<script src="index.js"></script>
 </body>
 </html>
