@@ -114,58 +114,87 @@
 </div>
 </div>
 <div class="courses flex flex-row flex-wrap justify-between text-justify my-8 space-y-10">
-    <div class="course-item w-[30%] shadow-xl rounded-md">
+    <div class="course-item w-[30%] shadow-2xl border rounded-xl mt-9 p-8">
          <div class="logo">
 
          </div>
-         <div class="head text-center">
+         <div class="head font-semibold text-xl text-center mb-4">
             <h3>BCA</h3>
          </div>
          <div class="info">The course curriculum is followed AKTU and the college is also good in placing the student in good company and they also find a good package in a reputed company.</div>
     </div>
-    <div class="course-item w-[30%]">
-        <div class="logo"></div>
-        <div class="head">
+    <div class="course-item w-[30%] shadow-2xl  border rounded-md p-8">
+        <div class="logo">
+            <i class="fa-solid fa-layer-group"></i>
+        </div>
+        <div class="head font-semibold text-xl text-center mb-4">
             <h3>BBA</h3>
         </div>
         <div class="info">The Bachelors of Business Administration (BBA) is an internationally-recognized degree designed to develop the skills required for careers in business and management.</div>
    </div>
-   <div class="course-item w-[30%] shadow-xl rounded-md">
+   <div class="course-item w-[30%] shadow-2xl  border rounded-md p-8">
     <div class="logo"></div>
-    <div class="head"><h3>PGDM</h3></div>
+    <div class="head font-semibold text-xl text-center mb-4"><h3>PGDM</h3></div>
     <div class="info">Post Graduate Diploma In Management in India is post graduate degree that engineers can opt. The benefits of PGDM degree is that multiple jobs open for individual.</div>
 </div>
-<div class="course-item w-[30%] shadow-xl rounded-md">
+<div class="course-item w-[30%] shadow-2xl  border rounded-md p-8">
     <div class="logo"></div>
-    <div class="head">
+    <div class="head font-semibold text-xl text-center mb-4">
         <h3>B. TECH.</h3>
     </div>
     <div class="info">The course curriculum is followed AKTU and the college is also good in placing the student in good company and they also find a good package in a reputed company.</div>
 </div>
-<div class="course-item w-[30%] shadow-xl rounded-md">
+<div class="course-item w-[30%] shadow-2xl border rounded-md p-8">
     <div class="logo"></div>
-    <div class="head">M.B.A.</div>
+    <div class="head font-semibold text-xl text-center mb-4">M.B.A.</div>
     <div class="info">The Master of Business Administration (MBA) is an internationally-recognized degree designed to develop the skills required for careers in business and management.</div>
 </div>
-<div class="course-item w-[30%] shadow-xl rounded-md">
+<div class="course-item w-[30%] shadow-2xl border rounded-md p-8">
     <div class="logo"></div>
-    <div class="head">M. TECH.</div>
+    <div class="head font-semibold text-xl text-center mb-4">M. TECH.</div>
     <div class="info">Master of Technology (M.Tech)in India is post graduate degree that engineers can opt. The benefits of MTech degree is that multiple jobs open for individual.</div>
     </div>
-    <div class="course-item w-[30%] shadow-xl rounded-md">
+    <div class="course-item w-[30%] shadow-2xl border rounded-md p-8">
         <div class="logo"></div>
-        <div class="head"><h3>M.C.A.</h3></div>
+        <div class="head font-semibold text-xl text-center mb-4"><h3>M.C.A.</h3></div>
         <div class="info">The MCA programme prepares the students to get into the IT industry - one of the most preferred industries today to take up positions like Systems Analysts.</div>
     </div>
 
-<div class="course-item w-[30%] shadow-xl rounded-md">
+<div class="course-item w-[30%] shadow-2xl  border rounded-md p-8">
     <div class="logo"></div>
-    <div class="head"><h3>B.TECH.(LATERAL)</h3></div>
+    <div class="head font-semibold text-xl text-center mb-4"><h3>B.TECH.(LATERAL)</h3></div>
     <div class="info">Get Lateral Entry Admission 2019 In B.Tech Computer Science Engineering From India's Top Ranked Colleges GL Bajaj Institute of technology & Management.</div>
 </div>
 
 </div>
 </div>
-<script src="index.js"></script>
+<script>
+    let hamburger=document.getElementsByClassName("hamburger")[0] 
+let slider= document.getElementsByClassName("slider")[0]
+let crossBtn=  document.getElementsByClassName("crossbtn")[0]
+let crossBtnLine= document.getElementsByClassName("line")[3]
+let crossBtnLine2= document.getElementsByClassName("line")[4]
+hamburger.addEventListener("click",function(){
+
+slider.style.width="80%"
+hamburger.style.display= "none"
+crossBtn.style.display="block"
+slider.style.left="0px"
+crossBtnLine.style.rotate="45deg"
+crossBtnLine2.style.rotate="138deg"
+crossBtnLine.style.width="24px"
+crossBtnLine2.style.width="24px"
+
+})
+crossBtn.addEventListener("click",function(){
+    slider.style.width="0px"
+    slider.style.left="-200px"
+    crossBtn.style.display="none"
+    hamburger.style.display="block"
+
+})
+
+
+</script>
 </body>
 </html>
