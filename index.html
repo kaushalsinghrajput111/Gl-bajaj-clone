@@ -11,7 +11,8 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="flex flex-row justify-between items-center px-8 py-3 bg-black sticky top-0 z-10">
+    <div class="nav bg-black sticky top-0 z-10">
+    <nav class="flex  flex-row justify-between items-center py-3 bg-black sticky top-0 z-10 w-[90%] mx-auto sm:w-[70%] md:w-[80%]  text-[#45000b] text-[16px]">
         <div class="logo"> <img class="w-28" src="logo-2.png" alt=""></div>
         <div class="hamburger lg:hidden">
             <div class="line h-0.5  w-6 bg-white my-1"></div>
@@ -45,6 +46,7 @@
             </ul>
         </div>
     </nav>
+    </div>
 
     <div class="homePage"><img src="slider1.jpg" alt=""></div>
     <div class="w-[90%] mx-auto sm:w-[70%] md:w-[80%]  text-[#45000b] text-[16px]">
@@ -200,8 +202,9 @@
     </form>
 </div>
 </div>
-<div class="footer bg-[#151515] text-white">
-<div>
+<div class=" bg-[#151515]">
+<div class="footer text-white flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap lg:justify-between space-y-6 w-[90%] mx-auto sm:w-[70%] md:w-[80%]  text-[16px] py-20">
+<div class=" sm:w-[50%] lg:w-[30%] mt-6 space-y-3">
     <img class="w-40" src="logo-2.png" alt="">
     <p>Plot No. 2, APJ Abdul Kalam Road
         Knowledge Park 3, Greater Noida
@@ -211,14 +214,54 @@
             <p><b>Email:</b> office@glbitm.ac.in</p>
         </div>
 </div>
-<div>
+<div class=" sm:w-[50%] lg:w-[30%]">
+<h3 class="mb-4 font-semibold text-lg">Useful Links</h3>
+<ul class="space-y-3 text-sm">
+    <li class="flex flex-row items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-[#ffc451]">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+      
+        <a href="">Home</a>
+    </li>
+    <li class="flex flex-row items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-[#ffc451]">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+      
+        <a href="">About Us</a>
+    </li>
+    <li class="flex flex-row items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-[#ffc451]">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+      
+        <a href="">Course</a>
+    </li>
+    <li class="flex flex-row items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-[#ffc451]">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+      
+        <a href="">Campus Facilities</a>
+    </li>
 
+    <li class="flex flex-row items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-[#ffc451]">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+      <a href="">Contact Us</a></li>
+</ul>
 </div>
-<div></div>
-<div></div>
+<div class=" sm:w-[50%]  lg:w-[30%]">
+    <h3 class="font-semibold text-lg mb-3">Our Vision</h3>
+    <p>To be an institute of repute, providing professionally competent and socially sensitive engineers. </p>
 </div>
-<div class="subfooter bg-black">
+<div class="sm:w-[50%]  lg:w-[30%]">
+    <h3 class="font-semibold text-lg">Social Links</h3>
+    <div>
 
+    </div>
+</div>
+</div></div>
+<div class="subfooter bg-black text-white text-center py-5">
+<p>© Copyright G.L. Bajaj. All Rights Reserved</p>
+<p>Designed by <a class=" text-[#ffc451]" href="https://kaushalkumarsingh.netlify.app">kaushal kumar singh</a></p>
 </div>
 <script>
     let hamburger=document.getElementsByClassName("hamburger")[0] 
